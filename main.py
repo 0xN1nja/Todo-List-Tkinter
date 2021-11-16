@@ -8,6 +8,7 @@ class TodoList(tk.Tk):
         self.win.geometry("400x400")
         self.win.title("TodoList")
         self.win.resizable(0,0)
+        self.win.wm_iconbitmap("./icon.ico")
     def create_widgets(self):
         # Init StringVariables
         self.item=tk.StringVar()
