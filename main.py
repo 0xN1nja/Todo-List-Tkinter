@@ -45,6 +45,7 @@ class TodoList(tk.Tk):
         user_input=mbox.askyesno("Warning","Are You Sure Want To Clear TodoList?")
         if user_input:
             self.listbox.delete(0,tk.END)
+            self.count=0
         else:
             return
     def help_window(self):
